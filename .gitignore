@@ -1,0 +1,59 @@
+A well-structured .gitignore file is crucial for maintaining a clean and efficient Git repository for your Next.js project. It prevents generated files, sensitive information, and local machine configurations from being unnecessarily committed to version control. Here is a comprehensive and standard .gitignore file for a typical Next.js application.
+
+The .gitignore File
+Create a file named .gitignore in the root of your Next.js project and add the following content:
+
+Code snippet
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Build directory
+/.next/
+/out/
+
+# Production build
+/build
+
+# Static exports
+/export
+
+# Cache
+.eslintcache
+.next-server-cache.json
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env
+
+# TypeScript
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# Test reports
+/coverage
+/reports
+
+# Editor directories and files
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# System files
+.DS_Store
+Thumbs.db
